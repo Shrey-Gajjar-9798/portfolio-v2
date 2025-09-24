@@ -1,9 +1,11 @@
 "use client";
 import LightRays from "@/components/HomeSection/LightRay";
+import Lanyard from "@/components/HomeSection/ProfileCard";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-full h-full">
+      <div className="w-full h-dvh absolute">
       <LightRays
         raysOrigin="top-center"
         raysColor="#00ffff"
@@ -16,6 +18,8 @@ export default function Home() {
         distortion={0.05}
         className="custom-rays"
       />
+      </div>
+      <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
     </div>
   );
 }
