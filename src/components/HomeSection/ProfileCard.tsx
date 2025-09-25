@@ -17,7 +17,7 @@ import * as THREE from 'three';
 
 // replace with your own imports, see the usage snippet for details
 const cardGLB = '/assets/card.glb';
-const lanyard = '/assets/lanyard.png';
+const lanyard = '/assets/canva.png';
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 
