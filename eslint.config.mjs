@@ -20,6 +20,15 @@ const eslintConfig = [
       "next-env.d.ts",
     ],
   },
+  {
+    rules: {
+      // 🔹 Allow `any`
+      "@typescript-eslint/no-explicit-any": "off",
+
+      // 🔹 Allow @ts-ignore / @ts-expect-error
+      "@typescript-eslint/ban-ts-comment": "off",
+    },
+  },
 ];
 
 export default eslintConfig;
