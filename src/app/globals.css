@@ -1,8 +1,14 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   --background: #000000;
   --foreground: #ffffff;
+}
+
+:root {
+  --font-space: 'Space Mono', monospace;
+  --font-mono-display: 'Major Mono Display', monospace;
 }
 
 @theme inline {
@@ -22,5 +28,9 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-space);
+}
+
+.font-major-mono {
+  font-family: 'Major Mono Display', monospace;
 }
