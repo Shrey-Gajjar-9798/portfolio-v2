@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Space_Mono, Major_Mono_Display } from 'next/font/google';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +12,11 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+
+const spaceMono = Space_Mono({ subsets: ['latin'], weight: ['400', '700'] });
+const majorMono = Major_Mono_Display({ subsets: ['latin'], weight: '400' });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
