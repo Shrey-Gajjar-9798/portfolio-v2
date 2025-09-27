@@ -5,8 +5,8 @@ import Shuffle from './SuffleText'
 
 const ConnectSection = () => {
     return (
-        <div className='w-full h-[600px] bg-[#0a0a0a] flex absolute justify-center'>
-            <div className='w-full h-full overflow-hidden flex flex-row items-center justify-between'>
+        <div className='w-full h-screen bg-[#0a0a0a] flex justify-center items-center'>
+            <div className='w-full h-3/4 overflow-hidden flex flex-row items-center justify-between'>
                 <video
                     src='/assets/bitcoin.mp4'
                     autoPlay
