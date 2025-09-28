@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useCallback } from 'react';
+import Image from 'next/image';
 import { useGesture } from '@use-gesture/react';
 
 type ImageItem = string | { src: string; alt?: string };
@@ -395,7 +396,8 @@ export default function DomeGallery({
             }
           }
 
-          let [vMagX, vMagY] = velArr;
+
+          const [vMagX, vMagY] = velArr;
           const [dirX, dirY] = dirArr;
           let vx = vMagX * dirX;
           let vy = vMagY * dirY;
@@ -823,11 +825,13 @@ export default function DomeGallery({
                       borderRadius: `var(--tile-radius, ${imageBorderRadius})`,
                       backfaceVisibility: 'hidden'
                     }}
-                  >
-                    <img
+                    >
+                    <Image
                       src={it.src}
-                      draggable={false}
                       alt={it.alt}
+                      draggable={false}
+                      width={500} // Adjust width as needed
+                      height={500} // Adjust height as needed
                       className="w-full h-full object-cover pointer-events-none"
                       style={{
                         backfaceVisibility: 'hidden',

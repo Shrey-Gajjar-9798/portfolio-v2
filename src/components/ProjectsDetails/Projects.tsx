@@ -60,7 +60,7 @@ const ProjectFlow = () => {
             <p className='font-major-mono text-8xl transform scale-y-150 ml-10'>Projects/</p>
           </div>
           <div className='max-w-xl  mr-10'>
-            <p className=''>With the combination of my passion for blockchain and ethereum development I'm able to push the boundaries in my craft.</p>
+            <p className=''>With the combination of my passion for blockchain and ethereum development I&apos;m able to push the boundaries in my craft.</p>
           </div>
         </div>
         <div className="absolute top-0 left-0 justify-center items-center w-full h-screen z-50 pointer-events-none">
