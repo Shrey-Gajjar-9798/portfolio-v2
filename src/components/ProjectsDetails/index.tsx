@@ -11,7 +11,7 @@ const ProjectDetails = () => {
             <div className='my-36 -z-30 bg-transparent'>
                 <ScrollVelocity
                     texts={['Transformative • Impact-Driven • Cutting-Edge • Decentralized • Smart •', 'Scalable • Secure • Efficient • Reliable • Optimized • Future-Ready']}
-                    velocity={100}
+                    velocity={50}
                     className="custom-scroll-text text-5xl text-[#fff9] "
                 />
             </div>
