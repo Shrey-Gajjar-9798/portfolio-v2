@@ -8,7 +8,7 @@ export type ImageItem = string | { src: string; alt?: string };
 const Skills = () => {
     return (<>
         <div className='w-full flex justify-center'>
-            <p className='text-4xl w-2/4 font-bold text-[#ffffffcb]'>
+            <p className='text-4xl mt-[30vh] w-2/4 font-bold text-[#ffffffcb]'>
                 My Go-To Stack for Building Secure and Scalable Applications
             </p>
         </div>
