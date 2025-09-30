@@ -9,7 +9,7 @@ import ScrollVelocity from '../HomeSection/MotionScroll';
 const ConnectSection = () => {
     return (
         <>
-            <div className='w-full flex items-center h-screen'>
+            <div className='w-full overflow-hidden flex items-center h-screen'>
                 <ScrollVelocity
                     texts={[`  Let's Work together  `]}
                     velocity={100}
