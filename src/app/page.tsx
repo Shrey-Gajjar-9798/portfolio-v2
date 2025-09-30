@@ -1,4 +1,5 @@
 import ConnectSection from "@/components/ConnectSection";
+import { FeaturesSection } from "@/components/featureSet/FeatureGrid";
 import Scrolltext from "@/components/global/Scrolltext";
 import HomePageSection from "@/components/HomeSection";
 import ProjectDetails from "@/components/ProjectsDetails";
@@ -9,6 +10,7 @@ export default function Home() {
     <div className="w-full h-full">
       <HomePageSection />
       <Scrolltext />
+      <FeaturesSection />
       <Skills />
       <ProjectDetails />
       <ConnectSection />

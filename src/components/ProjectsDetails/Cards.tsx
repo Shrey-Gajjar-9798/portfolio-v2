@@ -30,7 +30,8 @@ const Card: React.FC<CardProps> = ({i, title, description, src, url, color, prog
         style={{
           backgroundColor: color, 
           scale, 
-          top: `calc(-25% + ${i * 25}px)`
+          top: `calc(-25% + ${i * 25}px)`,
+          border: `2px solid black`,
         }} 
         className="flex flex-col relative h-[500px] w-[1000px] rounded-[25px] p-[50px] origin-top"
       >
@@ -54,7 +55,7 @@ const Card: React.FC<CardProps> = ({i, title, description, src, url, color, prog
             >
               <Image
                 fill
-                src={`/images/${src}`}
+                src={`/projects/${src}`}
                 alt="image"
                 className="object-cover"
               />
