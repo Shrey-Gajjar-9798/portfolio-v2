@@ -4,6 +4,7 @@ import React from 'react'
 import LightRays from './LightRay'
 import Lanyard from './ProfileCard'
 import ProfileInfo from './ProfileInfo';
+import ScrollVelocity from './MotionScroll';
 
 const HomePageSection = () => {
     return (
@@ -30,7 +31,6 @@ const HomePageSection = () => {
             <div className="absolute inset-0 z-20">
                 <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
             </div>
-
         </div>
     )
 }
