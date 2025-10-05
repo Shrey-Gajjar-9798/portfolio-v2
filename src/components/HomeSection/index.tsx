@@ -8,8 +8,8 @@ import ScrollVelocity from './MotionScroll';
 
 const HomePageSection = () => {
     return (
-        <div className='w-full h-dvh'>
-            <div className="w-full h-dvh absolute">
+        <div className='w-full h-[100vh]'>
+            <div className="w-full h-[100vh] absolute">
                 <LightRays
                     raysOrigin="top-center"
                     raysColor="#00ffff"
