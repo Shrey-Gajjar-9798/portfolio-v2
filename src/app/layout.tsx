@@ -3,6 +3,75 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Space_Mono, Major_Mono_Display } from 'next/font/google';
 import Navbar from "@/components/global/Navbar";
+import localFont from "next/font/local";
+const hatton = localFont({
+  src: [
+    {
+      path: "../../public/fonts/HattonUltralight.otf",
+      weight: "200",
+    },
+    {
+      path: "../../public/fonts/PPHatton-Medium.otf",
+      weight: "500",
+    },
+    {
+      path: "../../public/fonts/PPHatton-Medium.otf",
+      weight: "500",
+    },
+    {
+      path: "../../public/fonts/PPHatton-Bold.otf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-hatton",
+});
+const migra = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Migra-Extrabold.ttf",
+      weight: "900",
+    },
+    {
+      path: "../../public/fonts/MigraItalic-ExtraboldItalic.otf",
+      weight: "800",
+    },
+  ],
+  variable: "--font-migra",
+});
+const sansRounded = localFont({
+  src: [
+    {
+      path: "../../public/fonts/SansRoundedMedium.otf",
+      weight: "500",
+    },
+    {
+      path: "../../public/fonts/SansRoundedBold.otf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-sansrounded",
+});
+const didone = localFont({
+  src: [
+    {
+      path: "../../public/fonts/DidoneLight.otf",
+      weight: "200",
+    },
+    {
+      path: "../../public/fonts/DidoneSpatialBlack.otf",
+      weight: "300",
+    },
+    {
+      path: "../../public/fonts/DidoneMedium.otf",
+      weight: "500",
+    },
+    {
+      path: "../../public/fonts/DidoneBlack.otf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-didone",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +101,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+         className={[
+        hatton.variable,
+        didone.variable,
+        migra.variable,
+        sansRounded.variable,
+        geistMono.variable,
+        geistSans.variable,
+        "antialiased"
+      ].join(" ")}
       >
         <Navbar />
         {children}

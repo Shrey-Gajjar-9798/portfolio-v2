@@ -52,13 +52,13 @@ export function FeaturesSection() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="flex flex-row flex-wrap justify-center items-center">
                     {features.map((feature, index) => {
                         const Icon = feature.icon
                         return (
                             <Card
                                 key={index}
-                                className="group relative overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+                                className="group relative overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 w-[380px] h-[340px] my-4 mx-4 rounded-xl"
                             >
                                 <div
                                     className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}

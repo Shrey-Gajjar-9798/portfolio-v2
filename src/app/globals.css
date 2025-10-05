@@ -9,6 +9,11 @@
 :root {
   --font-space: 'Space Mono', monospace;
   --font-mono-display: 'Major Mono Display', monospace;
+  --font-dancing-script: 'Dancing Script', cursive;
+  --font-hatton: var(--font-hatton);
+  --font-migra: var(--font-migra);
+  --font-sansrounded: var(--font-sansrounded);
+  --font-didone: var(--font-didone);
 }
 
 @theme inline {
@@ -16,6 +21,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-mono-display: var(--font-mono-display);
+  --font-dancing-script: var(--font-dancing-script);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,4 +44,20 @@ body {
 
 .font-dancing-script {
   font-family: "Dancing Script", cursive;
+}
+
+.font-hatton {
+  font-family: var(--font-hatton);
+}
+
+.font-migra {
+  font-family: var(--font-migra);
+}
+
+.font-sansrounded {
+  font-family: var(--font-sansrounded);
+}
+
+.font-didone {
+  font-family: var(--font-didone);
 } 
