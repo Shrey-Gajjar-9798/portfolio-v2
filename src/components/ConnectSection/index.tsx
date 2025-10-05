@@ -17,18 +17,18 @@ const ConnectSection = () => {
                 />
             </div>
             <div className='w-full h-screen flex justify-center items-center'>
-                <div className='w-full h-3/4 overflow-hidden flex flex-row items-center justify-between'>
+                <div className='w-full h-3/4 overflow-hidden flex flex-row max-sm:flex-col items-center justify-between'>
                     <video
                         src='/assets/bitcoin.mp4'
                         autoPlay
                         muted
                         loop
                         playsInline
-                        className='w-2/4 h-full object-cover border-r-2 opacity-40 bg-black'
+                        className='w-2/4 h-full max-sm:w-full object-cover border-r-2 opacity-40 bg-black'
                     />
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col items-center max-sm:mt-4'>
                         <Shuffle
-                            className='text-white font-major-mono text-6xl'
+                            className='text-white font-major-mono text-6xl max-sm:text-2xl'
                             loop={true}
                             loopDelay={2.5}
                             text="Let's Create Something Innovative"
