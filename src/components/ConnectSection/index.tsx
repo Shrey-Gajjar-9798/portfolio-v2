@@ -45,22 +45,22 @@ const ConnectSection = () => {
                         />
                         <div className='flex mt-3'>
                             <div className='bg-white mx-2 rounded-xl'>
-                                <Link href={'https://github.comhttps://github.com/Shrey-Gajjar-9798'}>
+                                <Link href={'https://github.com/Shrey-Gajjar-9798'} target="_blank">
                                     <Image src="/icons/github.svg" alt="github" width={30} height={30} className='m-1 hover:scale-110 transition-transform cursor-pointer' />
                                 </Link>
                             </div>
                             <div className='bg-white mx-2 rounded-xl'>
-                                <Link href={'mailto:shrey.eth@gmail.com'}>
+                                <Link href={'mailto:shrey.eth@gmail.com'} target="_blank">
                                     <Image src="/icons/gmail.svg" alt="gmail" width={30} height={30} className='m-1 hover:scale-110 transition-transform cursor-pointer' />
                                 </Link>
                             </div>
                             <div className='bg-white mx-2 rounded-xl'>
-                                <Link href={'https://medium.com/@shrey97'}>
+                                <Link href={'https://medium.com/@shrey97'} target="_blank">
                                     <Image src="/icons/medium.svg" alt="medium" width={30} height={30} className='m-1 hover:scale-110 transition-transform cursor-pointer' />
                                 </Link>
                             </div>
                             <div className='bg-white mx-2 rounded-xl'>
-                                <Link href={'https://x.com/Shrey_gajjar_'}>
+                                <Link href={'https://x.com/Shrey_gajjar_'} target="_blank">
                                     <Image src="/icons/x.svg" alt="x" width={30} height={30} className='m-1 hover:scale-110 transition-transform cursor-pointer' />
                                 </Link>
                             </div>
