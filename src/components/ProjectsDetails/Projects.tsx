@@ -28,7 +28,7 @@ export default function ProjectFlow() {
         {
           projects.map((project, i) => {
             const targetScale = 1 - ((projects.length - i) * 0.05);
-            return <Card url={''} key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale} />
+            return <Card url={project.link} key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale} />
           })
         }
       </main>
