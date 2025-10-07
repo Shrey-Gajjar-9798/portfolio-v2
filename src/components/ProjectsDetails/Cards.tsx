@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({ i, title, description, src, url, color, pro
 
   return (
     <div ref={container} className="h-screen pt-[30vh] max-md:pt-[20vh] flex items-center justify-center sticky top-0 px-4 max-sm:px-2">
-      <div className='bg-gradient-to-bl from-cyan-900 to-[#024b90] via-syan-700 absolute w-[300px] h-[300px] blur-[200px] max-md:w-[200px] max-md:h-[200px] max-sm:w-[150px] max-sm:h-[150px]'></div>
+      <div className='bg-gradient-to-bl from-cyan-900 to-[#024b90] via-syan-700 absolute w-[300px] h-auto blur-[200px] max-md:w-[200px] max-md:h-fit max-sm:w-[150px] max-sm:h-auto'></div>
       <motion.div
         style={{
           // backgroundColor: color, 
@@ -34,10 +34,10 @@ const Card: React.FC<CardProps> = ({ i, title, description, src, url, color, pro
           top: `calc(-25% + ${i * 25}px)`,
 
         }}
-        className="flex flex-col max-sm:justify-center relative h-[500px] w-[1000px] max-lg:w-[800px] max-md:w-full max-sm:h-[500px] rounded-[25px] p-[50px] max-md:p-[30px] max-sm:p-[20px] origin-top bg-gradient-to-br from-[#00000034] to-[#ffffff24] via-[#1d1d1d5c] backdrop-blur-[120px]"
+        className="flex flex-col max-sm:justify-center relative h-[530px] w-[1000px] max-lg:w-[800px] max-md:w-full max-sm:h-[540px] rounded-[25px] p-[50px] max-md:p-[30px] max-sm:p-[20px] origin-top bg-gradient-to-br from-[#00000034] to-[#ffffff24] via-[#1d1d1d5c] backdrop-blur-[120px]"
       >
         <h2 className="text-center m-0 text-[28px] max-md:text-[24px] max-sm:text-[20px] text-white font-migra">{title}</h2>
-        <div className="flex h-full mt-[50px] max-md:mt-[30px] max-sm:mt-[20px] gap-[50px] max-md:gap-[30px] max-sm:gap-[20px] max-md:flex-col">
+        <div className="flex h-full mt-[15px] max-md:mt-[30px] max-sm:mt-[20px] gap-[50px] max-md:gap-[30px] max-sm:gap-[20px] max-md:flex-col">
 
           <div className="relative w-[60%] max-md:w-full h-full max-sm:h-[250px] rounded-[25px] max-sm:rounded-[15px] overflow-hidden">
             <motion.div
@@ -53,8 +53,8 @@ const Card: React.FC<CardProps> = ({ i, title, description, src, url, color, pro
             </motion.div>
           </div>
           {/* description */}
-          <div className="w-[40%] max-md:w-full relative top-[10%] max-md:top-0">
-            <p className="text-base max-md:text-[14px] max-sm:text-[12px] first-letter:text-[28px] max-md:first-letter:text-[24px] max-sm:first-letter:text-[20px] text-white">{description}</p>
+          <div className="w-[40%] max-md:w-full relative max-md:top-0">
+            <p className="text-[15px] max-md:text-[14px] max-sm:text-[12px] first-letter:text-[28px] max-md:first-letter:text-[24px] max-sm:first-letter:text-[20px] text-white">{description}</p>
             <span className="flex items-center gap-[5px] max-sm:gap-[3px] mt-4">
               <a href={url} target="_blank" rel="noopener noreferrer" className="text-xs max-sm:text-[10px] underline cursor-pointer text-white hover:text-gray-300 transition-colors">
                 See more

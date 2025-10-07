@@ -17,14 +17,14 @@ export interface Project {
 export const projects = [
     {
         title: "ZLAYER",
-        description: "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
+        description: "ZLayer is a decentralized personalization platform that empowers users to take control of their private Web2 data by securely integrating it into the Web3 ecosystem. Users are rewarded for sharing their data, enabling AI agents and brands to deliver hyper-personalized experiences tailored to individual preferences. With zLayer, users can unlock the full potential of their data while maintaining privacy and security",
         src: "zlayer.png",
         link: "https://zlayer.ai",
         color: "#3B3838"
     },
     {
         title: "LayerZero Bridge",
-        description: "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).",
+        description: "A cross‑chain bridging protocol built on LayerZero, enabling users to send native tokens from one chain to multiple destination chains in a single transaction. Optimized for gas efficiency and usability, the bridge estimates and bundles LayerZero fees, handles routing to multiple target chains, and supports scalable, native-token transfers across diverse blockchains.",
         src: "lzbridge.png",
         link: "https://lzbridge.vercel.app",
         color: "#3B3838"
@@ -38,16 +38,16 @@ export const projects = [
     },
     {
         title: "SENDACROSS",
-        description: "The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold; an ongoing project investigating how humans interact with and disrupt the Danish coast.",
+        description: "SendAcross is a decentralized Web3 platform that merges secure messaging, crypto payments, and AI-powered tools into one seamless experience. It offers encrypted Web3 email, real-time chat, interactive frames (for in-chat payments, NFTs, voting), invoicing, and multi-chain support for transactions across Ethereum, Polygon, BNB, and more. With built-in tools like the AI agent “Alex,” users can swap, bridge and manage payments—all within the same interface",
         src: "sendacross.png",
         link: "https://sendacross.ai",
         color: "#3B3838"
     },
     {
         title: "Stable InvoicePay & Payroll",
-        description: "Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, &apos;all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote.",
+        description: "Developed a blockchain-based payroll solution enabling companies to pay global employees and contractors using stablecoins (e.g. USDC, USDT). The platform supports automated, secure, and compliant cross-border payments, with options to fund payroll via fiat or crypto. Key features include smart contract-powered payouts, contractor invoicing, multi-chain support, and built-in compliance tools.",
         src: "stablecoin.png",
-        link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
+        link: "",
         color: "#3B3838"
     }
 ]
