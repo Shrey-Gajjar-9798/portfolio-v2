@@ -6,7 +6,7 @@ export function FeaturesSection() {
     const features = [
         {
             icon: Shield,
-            title: "30+ Contracts Audited",
+            title: "20+ Contracts Audited",
             description: "Production-ready smart contracts audited and deployed across multiple blockchain networks",
             gradient: "from-primary/20 to-accent/20",
             iconColor: "text-primary",
